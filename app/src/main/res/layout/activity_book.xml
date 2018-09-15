@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fblaproject.william.infinitelibrary.BookActivity">
+
+    <!-- Layout to contain Book Cover, Title, and Author in the same row -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Image view for book cover -->
+
+        <ImageView
+            android:id="@+id/imageViewBookCover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="0.8" />
+
+        <!-- Layout to contain Title and Author in the same column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <!-- Text view for the title -->
+            <TextView
+                android:id="@+id/textViewBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="22sp" />
+
+            <!-- Text view for the author -->
+            <TextView
+                android:id="@+id/textViewBookSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Scroll view for the bottom elements -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <!-- Layout to contain the rest of the page in the same column -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Description: \n \t"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewBookISBN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ISBN: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewBookRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewBookDewey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dewey Decimal Index: "
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <!-- Checkout button -->
+                <Button
+                    android:id="@+id/buttonBookCheckout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F5555C"
+                    android:text="Checkout"
+                    android:textColor="@android:color/white" />
+
+                <!-- Reserve button -->
+                <Button
+                    android:id="@+id/buttonBookReserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#349EF5"
+                    android:text="Reserve"
+                    android:textColor="@android:color/white" />
+
+                <!-- Watchlist button -->
+                <Button
+                    android:id="@+id/buttonBookWatchlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#efd434"
+                    android:text="Watchlist"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBarBook"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <!-- Text view for the "Share Via:" text -->
+                <TextView
+                    android:id="@+id/shareTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Share Via: "
+                    android:textSize="24sp" />
+
+                <!-- Image button for sharing to Twitter -->
+                <ImageButton
+                    android:id="@+id/tweetButtonBooks"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@mipmap/twittershare" />
+
+                <!-- Image button for sharing to Facebook -->
+                <ImageButton
+                    android:id="@+id/facebookButtonBooks"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@mipmap/facebookshare" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonBookCitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#7f7f7f"
+                android:text="Get MLA7 Citation"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

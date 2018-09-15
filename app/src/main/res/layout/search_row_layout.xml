@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout to format the search list view data -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:padding="6dp">
+
+    <!-- Image view for the book cover -->
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:paddingLeft="-70dp"
+        android:paddingRight="-50dp" />
+
+    <!-- Text view for the author -->
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/cover"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textSize="18sp" />
+
+    <!-- Text view for the title -->
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/secondLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/cover"
+        android:gravity="center_vertical"
+
+        android:textSize="24sp" />
+
+</RelativeLayout>

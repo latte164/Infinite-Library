@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "597524862831",
+    "firebase_url": "https://infinite-library.firebaseio.com",
+    "project_id": "infinite-library",
+    "storage_bucket": "infinite-library.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597524862831:android:bbcf43175f5834c0",
+        "android_client_info": {
+          "package_name": "com.example.zackpc.infinitelibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597524862831-p25lscu8ci35krt7c9qo43cn2la03nsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zackpc.infinitelibrary",
+            "certificate_hash": "3ab9045694ba7b0564223733f5113ffa4d0a2f0a"
+          }
+        },
+        {
+          "client_id": "597524862831-9rhqshc5a9r9rr9tqoh52mvt90ihqavq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-DR00XNhAbXyVYFalAXFXzwMM_lW9n3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597524862831-9rhqshc5a9r9rr9tqoh52mvt90ihqavq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597524862831:android:c76ee01af365b5ea",
+        "android_client_info": {
+          "package_name": "com.fblaproject.william.infinitelibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597524862831-be5cd7jagugjg8jl9jktkp82hssb6qoq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fblaproject.william.infinitelibrary",
+            "certificate_hash": "fcaf4196addfd20c280f7423d7e8c541aac89f04"
+          }
+        },
+        {
+          "client_id": "597524862831-9rhqshc5a9r9rr9tqoh52mvt90ihqavq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-DR00XNhAbXyVYFalAXFXzwMM_lW9n3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597524862831-9rhqshc5a9r9rr9tqoh52mvt90ihqavq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
